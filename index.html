@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,
+initial-scale=1.0">
+
+<title>RBMK-1000 Simulator</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<img src="images/logo.png"
+id="logo">
+
+<h1>
+
+☢ RBMK-1000 SIMULATOR
+
+</h1>
+
+<h3>
+
+UNIDADE 4
+
+</h3>
+
+</header>
+
+<div class="container">
+
+<div class="panel">
+
+<h2>REATOR</h2>
+
+<p>Potência</p>
+
+<div class="bar">
+
+<div id="powerBar"></div>
+
+</div>
+
+<p>Temperatura</p>
+
+<div class="bar">
+
+<div id="tempBar"></div>
+
+</div>
+
+<p>Pressão</p>
+
+<div class="bar">
+
+<div id="pressureBar"></div>
+
+</div>
+
+<p>Fluxo de água</p>
+
+<div class="bar">
+
+<div id="waterBar"></div>
+
+</div>
+
+</div>
+
+
+
+<div class="panel">
+
+<h2>BARRAS DE CONTROLE</h2>
+
+<h1 id="rodDisplay">
+
+45%
+
+</h1>
+
+<button onclick="insertRods()">
+
+INSERIR
+
+</button>
+
+<button onclick="removeRods()">
+
+RETIRAR
+
+</button>
+
+</div>
+
+
+
+<div class="panel">
+
+<h2>TURBINAS</h2>
+
+<h1 id="rpmDisplay">
+
+1500
+
+</h1>
+
+<h3>RPM</h3>
+
+<h1 id="energyDisplay">
+
+1000 MWe
+
+</h1>
+
+<h3>PRODUÇÃO ELÉTRICA</h3>
+
+</div>
+
+
+
+<div class="panel">
+
+<h2>BOMBAS</h2>
+
+<h1 id="waterDisplay">
+
+70%
+
+</h1>
+
+<button onclick="increaseWater()">
+
+AUMENTAR
+
+</button>
+
+<button onclick="decreaseWater()">
+
+DIMINUIR
+
+</button>
+
+</div>
+
+
+
+<div class="panel">
+
+<h2>EVENTOS</h2>
+
+<h1 id="eventBox">
+
+NENHUM EVENTO
+
+</h1>
+
+</div>
+
+
+
+<div class="panel">
+
+<h2>MODO</h2>
+
+<h1 id="modeBox">
+
+NORMAL
+
+</h1>
+
+<button onclick="toggleSandbox()">
+
+SANDBOX
+
+</button>
+
+</div>
+
+
+
+<div class="panel">
+
+<h2>ALARMES</h2>
+
+<h1 id="alarmBox">
+
+NORMAL
+
+</h1>
+
+</div>
+
+
+
+<div class="panel">
+
+<button id="scramButton"
+
+onclick="scram()">
+
+SCRAM
+
+</button>
+
+</div>
+
+</div>
+
+<div class="panel">
+
+<h2>GRÁFICO DE POTÊNCIA</h2>
+
+<canvas id="powerGraph"
+width="600"
+height="200">
+
+</canvas>
+
+</div>
+
+<script src="script.js">
+
+</script>
+
+</body>
+
+</html>
